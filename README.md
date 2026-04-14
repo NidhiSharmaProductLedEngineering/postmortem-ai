@@ -29,7 +29,7 @@ Export as **PDF** or copy as **Markdown**.
 
 ## Demo
 
-→ [Live Demo](https://postmortem-ai.vercel.app) *(deploy your own below)*
+→ [Live Demo](https://postmortem-ai.vercel.app) 
 
 ## Built With
 
@@ -52,11 +52,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/NidhiSharmaProductLedEngineering/postmortem-ai)
-
-Set your `OPENAI_API_KEY` environment variable in Vercel dashboard.
 
 ## Project Structure
 
