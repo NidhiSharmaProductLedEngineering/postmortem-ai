@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   page.drawRectangle({ x: 0, y: height - 80, width, height: 80, color: rgb(0.03, 0.04, 0.06) })
 
   // Severity badge
-  page.drawRectangle({ x: 40, y: height - 60, width: 40, height: 22, color: severityColor, borderRadius: 3 })
+  page.drawRectangle({ x: 40, y: height - 60, width: 40, height: 22, color: severityColor})
   page.drawText(severity, { x: 48, y: height - 52, size: 10, font: helveticaBold, color: colors.white })
 
   // Title
@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
     if (isHeader) {
       if (yPos < height - 140) yPos -= 6
       const headerText = trimmed.replace('## ', '')
-      page.drawRectangle({ x: 40, y: yPos - 4, width: maxWidth, height: 18, color: colors.lightGray, borderRadius: 2 })
+      page.drawRectangle({ x: 40, y: yPos - 4, width: maxWidth, height: 18, color: colors.lightGray })
       page.drawText(headerText, { x: 44, y: yPos, size: 10, font: helveticaBold, color: colors.black })
       yPos -= lineHeight + 8
     } else if (isTimestamp) {
