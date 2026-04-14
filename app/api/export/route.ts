@@ -97,8 +97,9 @@ export async function POST(req: NextRequest) {
   })
 
   const pdfBytes = await pdfDoc.save()
+  const buffer = Buffer.from(pdfBytes)
 
-  return new NextResponse(pdfBytes, {
+  return new NextResponse(buffer, {
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': `attachment; filename="postmortem-${severity}-${Date.now()}.pdf"`,
